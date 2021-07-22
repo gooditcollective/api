@@ -1,35 +1,35 @@
 {
-  "name": "gooditworks_base",
-  "version": "0.1.1",
-  "description": "Gooditworks base project",
-  "repository": "https://github.com/gooditworks/base",
-  "author": "Max Eliseev <mxseev@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "postinstall": "sh ./scripts/add_base_remote.sh",
-    "lint": "concurrently -c green \"npm:lint:*\"",
-    "lint:base": "sh ./scripts/check_base_update.sh",
-    "lint:typecheck": "tsc --noEmit --project tsconfig.json",
-    "lint:ts": "eslint --ext .ts,.tsx .",
-    "test": "concurrently -c green \"npm:test:*\"",
-    "test:unit": "jest"
-  },
-  "devDependencies": {
-    "@arkweid/lefthook": "^0.7.6",
-    "@types/jest": "^26.0.23",
-    "@typescript-eslint/eslint-plugin": "^4.26.1",
-    "@typescript-eslint/parser": "^4.26.1",
-    "concurrently": "^6.2.0",
-    "eslint": "^7.28.0",
-    "eslint-config-airbnb-base-ts": "^14.1.1",
-    "eslint-plugin-jest": "^24.3.6",
-    "jest": "^27.0.4",
-    "prettier": "^2.3.1",
-    "ts-jest": "^27.0.3",
-    "typescript": "^4.3.2"
-  },
-  "dependencies": {
-    "@linear/sdk": "^1.15.0",
-    "@vercel/node": "^1.11.1"
-  }
+    "name": "gooditworks api",
+    "version": "0.1.1",
+    "description": "Gooditworks API",
+    "repository": "https://github.com/gooditworks/api",
+    "author": "Sergey Petrov <sergey@goodit.works>",
+    "license": "MIT",
+    "scripts": {
+        "postinstall": "sh ./scripts/add_base_remote.sh",
+        "lint": "concurrently -c green \"npm:lint:*\"",
+        "lint:base": "sh ./scripts/check_base_update.sh",
+        "lint:typecheck": "tsc --noEmit --project tsconfig.json",
+        "lint:ts": "eslint --ext .ts,.tsx .",
+        "test": "concurrently -c green \"npm:test:*\"",
+        "test:unit": "jest"
+    },
+    "devDependencies": {
+        "@arkweid/lefthook": "^0.7.6",
+        "@types/jest": "^26.0.23",
+        "@typescript-eslint/eslint-plugin": "^4.26.1",
+        "@typescript-eslint/parser": "^4.26.1",
+        "concurrently": "^6.2.0",
+        "eslint": "^7.28.0",
+        "eslint-config-airbnb-base-ts": "^14.1.1",
+        "eslint-plugin-jest": "^24.3.6",
+        "jest": "^27.0.4",
+        "prettier": "^2.3.1",
+        "ts-jest": "^27.0.3",
+        "typescript": "^4.3.2"
+    },
+    "dependencies": {
+        "@linear/sdk": "^1.15.0",
+        "@vercel/node": "^1.11.1"
+    }
 }
